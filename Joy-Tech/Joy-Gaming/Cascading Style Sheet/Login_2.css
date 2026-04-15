@@ -1,0 +1,81 @@
+body
+{
+    margin:0px;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg,green, red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box
+{
+    width: 320px;
+    padding: 40px;
+    border-radius:20px;
+    background: rgba(255 ,255, 255 , 0.1);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255 ,255, 255,  0.3);
+    box-shadow: 0 8px 32px rgba( 0 0 0 0 3);
+    color: white;
+    text-align: center;
+}
+.form-box h2
+{
+    margin-bottom: 20px;
+}
+h2
+{
+    color: black;
+}
+input
+{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    border:none;
+    outline: none;
+    background: rgba(255 ,255, 255,0.2);
+    color: white;
+    transition: 0.3s;
+
+}
+input::placeholder
+{
+    color: red;
+}
+input:focus
+{
+    box-shadow: 0 0 10px rgba(255 ,255, 255, 0.8);
+}
+button
+{
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255 ,255, 255, 0.2);
+    color:red;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover
+{
+    background: rgba(255 ,255, 255,0.4);
+    transform: scale(1.05);
+    
+}
+.form-box:hover
+{
+    box-shadow: 0 0 25px rgba(255 ,255, 244, 0.3)
+}
+button:hover
+{
+    color: green;
+}
+
