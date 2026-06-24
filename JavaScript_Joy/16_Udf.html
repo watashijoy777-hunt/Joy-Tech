@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>
+        Using Documen.write method
+    </h1>
+    <button type="button" onclick="printtable();">
+        Generate Multiplication Table
+
+    </button>
+    <Script>
+    function printtable()
+{
+    console.log('printtable function called....');
+
+    var num = prompt("Enter one number",1);
+    num = parseInt(num);
+
+    var multiplier = 1;
+    var result = 0;
+
+    while(multiplier <= 10)
+    {
+        result = num * multiplier;
+        document.write(`${num} * ${multiplier} = ${result} <br/>`);
+        multiplier++;
+    }
+}
+    
+
+    </script>
+    
+
+    
+</body>
+</html>
